@@ -19,7 +19,7 @@ package org.apache.spark.mllib.optimization.tfocs
 
 import scala.collection.mutable.ArrayBuffer
 
-import org.apache.spark.Logging
+import org.apache.spark.internal.Logging
 
 object TFOCS extends Logging {
 

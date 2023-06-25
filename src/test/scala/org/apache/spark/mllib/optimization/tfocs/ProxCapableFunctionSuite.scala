@@ -17,7 +17,7 @@
 
 package org.apache.spark.mllib.optimization.tfocs
 
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
 import org.apache.spark.mllib.linalg.{ BLAS, DenseVector, Vectors }
 import org.apache.spark.mllib.optimization.tfocs.DVectorFunctions._
@@ -26,7 +26,7 @@ import org.apache.spark.mllib.optimization.tfocs.fs.dvector.double._
 import org.apache.spark.mllib.util.MLlibTestSparkContext
 import org.apache.spark.mllib.util.TestingUtils._
 
-class ProxCapableFunctionSuite extends FunSuite with MLlibTestSparkContext {
+class ProxCapableFunctionSuite extends AnyFunSuite with MLlibTestSparkContext {
 
   test("The ProxZero implementation should return the expected value and vector") {
     val fun = new ProxZero()
