@@ -18,6 +18,7 @@ organization := "com.databricks"
 name := "spark-tfocs"
 version := "1.0-SNAPSHOT"
 scalaVersion := "2.12.18"
+scalacOptions ++= Seq("-feature", "-deprecation")
 
 val sparkVersion = "3.4.0"
 

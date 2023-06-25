@@ -26,9 +26,9 @@ import org.apache.spark.mllib.optimization.tfocs.fs.vector.dvector.LinopMatrix
 import org.apache.spark.mllib.optimization.tfocs.fs.dvector.vector.LinopMatrixAdjoint
 import org.apache.spark.mllib.optimization.tfocs.fs.vector.dvectordouble.{ LinopMatrix => LinopMatrixVector }
 import org.apache.spark.mllib.optimization.tfocs.fs.dvectordouble.vector.{ LinopMatrixAdjoint => LinopMatrixVectorAdjoint }
-import org.apache.spark.mllib.util.MLlibTestSparkContext
+import org.apache.spark.mllib.util.MLLibTestSparkContext
 
-class LinearOperatorSuite extends AnyFunSuite with MLlibTestSparkContext {
+class LinearOperatorSuite extends AnyFunSuite with MLLibTestSparkContext {
 
   lazy val matrix = sc.parallelize(Array(Vectors.dense(1.0, 2.0, 3.0),
     Vectors.dense(4.0, 5.0, 6.0)), 2)

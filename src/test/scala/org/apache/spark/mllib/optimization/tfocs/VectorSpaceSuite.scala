@@ -20,14 +20,14 @@ package org.apache.spark.mllib.optimization.tfocs
 import org.scalatest.funsuite.AnyFunSuite
 
 import org.apache.spark.mllib.linalg.{ DenseVector, Vectors }
-import org.apache.spark.mllib.util.MLlibTestSparkContext
+import org.apache.spark.mllib.util.MLLibTestSparkContext
 import org.apache.spark.mllib.optimization.tfocs.DVectorFunctions._
 import org.apache.spark.mllib.optimization.tfocs.VectorSpace._
 import org.apache.spark.mllib.optimization.tfocs.vs.dvector.DVectorSpace
 import org.apache.spark.mllib.optimization.tfocs.vs.dvectordouble.DVectorDoubleSpace
 import org.apache.spark.mllib.optimization.tfocs.vs.vector.DenseVectorSpace
 
-class VectorSpaceSuite extends AnyFunSuite with MLlibTestSparkContext {
+class VectorSpaceSuite extends AnyFunSuite with MLLibTestSparkContext {
 
   test("DenseVectorSpace.combine is implemented properly") {
     val alpha = 1.1
