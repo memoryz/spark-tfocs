@@ -17,8 +17,10 @@
 
 package org.apache.spark.mllib.optimization.tfocs
 
-import org.apache.spark.mllib.linalg.{ BLAS, DenseVector, Vectors }
+import org.apache.spark.mllib.linalg.{BLAS, DenseVector, Vectors}
 import org.apache.spark.mllib.optimization.tfocs.VectorSpace._
+
+import scala.language.implicitConversions
 
 /**
  * Extra functions available on DVectors through an implicit conversion. DVectors are represented

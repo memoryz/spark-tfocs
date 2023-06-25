@@ -17,7 +17,7 @@
 
 package org.apache.spark.mllib.optimization.tfocs
 
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
 import org.apache.spark.SparkException
 import org.apache.spark.mllib.linalg.{ DenseVector, Vectors }
@@ -26,10 +26,10 @@ import org.apache.spark.mllib.optimization.tfocs.fs.dvector.double._
 import org.apache.spark.mllib.optimization.tfocs.fs.dvectordouble.double._
 import org.apache.spark.mllib.optimization.tfocs.fs.generic.double._
 import org.apache.spark.mllib.optimization.tfocs.vs.dvector._
-import org.apache.spark.mllib.util.MLlibTestSparkContext
+import org.apache.spark.mllib.util.MLLibTestSparkContext
 import org.apache.spark.mllib.util.TestingUtils._
 
-class SmoothFunctionSuite extends FunSuite with MLlibTestSparkContext {
+class SmoothFunctionSuite extends AnyFunSuite with MLLibTestSparkContext {
 
   test("The SmoothQuad implementation should return the expected value and gradient") {
 

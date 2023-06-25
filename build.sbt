@@ -17,18 +17,21 @@
 organization := "com.databricks"
 name := "spark-tfocs"
 version := "1.0-SNAPSHOT"
-scalaVersion := "2.11.12"
+scalaVersion := "2.12.18"
+scalacOptions ++= Seq("-feature", "-deprecation")
+
+val sparkVersion = "3.4.0"
 
 licenses += "Apache-2.0" -> url("http://opensource.org/licenses/Apache-2.0")
 
 libraryDependencies ++= Seq(
-  "org.apache.spark" % "spark-core_2.11" % "1.4.1",
-  "org.apache.spark" % "spark-mllib_2.11" % "1.4.1"
+  "org.apache.spark" %% "spark-core" % sparkVersion,
+  "org.apache.spark" %% "spark-mllib" % sparkVersion
 )
 
 libraryDependencies ++= Seq(
   "com.joptimizer" % "joptimizer" % "3.4.0",
-  "org.scalatest" %% "scalatest" % "2.1.5" % Test
+  "org.scalatest" %% "scalatest" % "3.2.15" % Test
 )
 
 Test/parallelExecution := false

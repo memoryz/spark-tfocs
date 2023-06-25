@@ -17,6 +17,8 @@
 
 package org.apache.spark.mllib.optimization.tfocs
 
+import scala.language.implicitConversions
+
 /**
  * Helpers to perform validation when zipping two iterators, available using an implicit conversion.
  */

@@ -19,14 +19,14 @@ package org.apache.spark.mllib.optimization.tfocs
 
 import scala.io.Source
 
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
 import org.apache.spark.mllib.linalg.{ DenseVector, Vectors }
 import org.apache.spark.mllib.optimization.tfocs.DVectorFunctions._
-import org.apache.spark.mllib.util.MLlibTestSparkContext
+import org.apache.spark.mllib.util.MLLibTestSparkContext
 import org.apache.spark.mllib.util.TestingUtils._
 
-class SolverSLPSuite extends FunSuite with MLlibTestSparkContext {
+class SolverSLPSuite extends AnyFunSuite with MLLibTestSparkContext {
 
   test("The values and losses returned by Spark SolverSLP should match those returned by Matlab " +
     "tfocs's solver_sLP") {
