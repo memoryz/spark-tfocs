@@ -29,7 +29,7 @@ object SolverSLP {
 
   /**
    * Solve the smoothed standard form linear program:
-   *   minimize c' * x + 0.5 * mu * ||x - x0||_2^2
+   *   minimize `c' * x + 0.5 * mu * ||x - x0||_2^2`
    *   s.t.     A' * x == b' and x >= 0
    *
    * @param c Objective function coefficient vector. Represented as a distributed vector, DVector.

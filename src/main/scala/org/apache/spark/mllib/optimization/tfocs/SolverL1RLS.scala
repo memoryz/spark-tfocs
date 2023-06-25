@@ -29,7 +29,7 @@ import org.apache.spark.mllib.optimization.tfocs.vs.vector._
 object SolverL1RLS {
 
   /**
-   * Solves the l1 regularized least squares problem 0.5 * ||A * x' - b||_2^2 + lambda * ||x||_1
+   * Solves the l1 regularized least squares problem `0.5 * ||A * x' - b||_2^2 + lambda * ||x||_1`
    * using the Spark TFOCS optimizer. This problem is sometimes referred to as lasso linear
    * regression.
    *
