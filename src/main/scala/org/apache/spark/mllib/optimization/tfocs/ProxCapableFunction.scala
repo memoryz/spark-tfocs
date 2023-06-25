@@ -20,7 +20,7 @@ package org.apache.spark.mllib.optimization.tfocs
 /**
  * A prox capable function trait with support for efficient proximity minimization, as expressed
  * by the proximity operator:
- *   x = prox_h(z, t) = argmin_x(h(x) + 0.5 * ||x - z||_2^2 / t)
+ *   `x = prox_h(z, t) = argmin_x(h(x) + 0.5 * ||x - z||_2^2 / t)`
  *
  * The minimizing x value and/or the function value h(x) may be computed, depending on the
  * specified ProxMode.
